@@ -60,5 +60,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>天気を確認するために位置情報の取得が必要です。</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>天気を確認するために位置情報の取得が必要です。</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		089B960A846F3544324D9CBE /* Pods_Wether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139E0439C0B735F5808133EA /* Pods_Wether.framework */; };
 		6147271B24D2988000BD7B72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147271A24D2988000BD7B72 /* AppDelegate.swift */; };
 		6147271D24D2988000BD7B72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147271C24D2988000BD7B72 /* SceneDelegate.swift */; };
 		6147271F24D2988000BD7B72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147271E24D2988000BD7B72 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		034C327355DC16FF9098587A /* Pods-Wether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wether.release.xcconfig"; path = "Target Support Files/Pods-Wether/Pods-Wether.release.xcconfig"; sourceTree = "<group>"; };
+		139E0439C0B735F5808133EA /* Pods_Wether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6147271724D2988000BD7B72 /* Wether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6147271A24D2988000BD7B72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6147271C24D2988000BD7B72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		6147272324D2988200BD7B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6147272624D2988200BD7B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6147272824D2988200BD7B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB77FE513E54F063F1ADF125 /* Pods-Wether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wether.debug.xcconfig"; path = "Target Support Files/Pods-Wether/Pods-Wether.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089B960A846F3544324D9CBE /* Pods_Wether.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				6147271924D2988000BD7B72 /* Wether */,
 				6147271824D2988000BD7B72 /* Products */,
+				987E9F6C71E60DFA9DB97850 /* Pods */,
+				FEF1EE5EAB5B33BF37820744 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Wether;
 			sourceTree = "<group>";
 		};
+		987E9F6C71E60DFA9DB97850 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB77FE513E54F063F1ADF125 /* Pods-Wether.debug.xcconfig */,
+				034C327355DC16FF9098587A /* Pods-Wether.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FEF1EE5EAB5B33BF37820744 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				139E0439C0B735F5808133EA /* Pods_Wether.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6147272B24D2988200BD7B72 /* Build configuration list for PBXNativeTarget "Wether" */;
 			buildPhases = (
+				49A10E882E89758481091A61 /* [CP] Check Pods Manifest.lock */,
 				6147271324D2988000BD7B72 /* Sources */,
 				6147271424D2988000BD7B72 /* Frameworks */,
 				6147271524D2988000BD7B72 /* Resources */,
+				B77D96EFBAE7EE0986DB537E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49A10E882E89758481091A61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wether-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B77D96EFBAE7EE0986DB537E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wether/Pods-Wether-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wether/Pods-Wether-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wether/Pods-Wether-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6147271324D2988000BD7B72 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		6147272C24D2988200BD7B72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB77FE513E54F063F1ADF125 /* Pods-Wether.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		6147272D24D2988200BD7B72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 034C327355DC16FF9098587A /* Pods-Wether.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
